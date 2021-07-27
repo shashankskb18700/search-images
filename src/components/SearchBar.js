@@ -10,9 +10,21 @@ class SearchBar extends React.Component{
 
    onFormSubmit=(event)=>{
      event.preventDefault();
-     console.log(this.props);
+    
      this.props.onSubmit(this.state.term);
-  }
+   }
+  // componentDidMount() {
+  //   window.addEventListener("scroll", () => {
+  //     if (
+  //       window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 
+  //     ) {
+        
+  //       this.props.onSubmit(this.state.term);
+  //     }
+
+  //    }
+  //   );
+  // }
 
   render() {
     return (

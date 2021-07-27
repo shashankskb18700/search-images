@@ -3,8 +3,9 @@ import './imageList.css';
 import ImageCard from '../components/ImageCard';
 
 const ImageList = (props) => {
+  const stores=[]
   const images = props.images.map(
-    (image) => {
+    (image) => { 
       return <ImageCard  key={image.id} image={image} />
     }
   );

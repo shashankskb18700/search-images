@@ -20,6 +20,7 @@ class ImageCard extends React.Component{
     return (
       <div style={{gridRowEnd:`span ${this.state.spans}`}}>
         <img
+          
           ref={this.imageRef}
           alt={description}
           src={urls.regular} />
